@@ -23,6 +23,17 @@ Initialization configures the hardware once, while runtime HAL GPIO write functi
 ## GPIO Concept
 GPIO (General Purpose Input Output) pins allow a microcontroller to interact with external hardware by reading or driving voltage levels.
 
+## STM32 GPIO Registers (Conceptual)
+
+- MODER: Selects pin mode (input/output/alternate/analog)
+- OTYPER: Selects push-pull or open-drain output
+- OSPEEDR: Controls output switching speed
+- PUPDR: Enables internal pull-up or pull-down resistors
+- IDR: Reads current logic level on the pin
+- ODR: Sets output logic level
+
+These registers directly control internal transistors connected to the GPIO pin.
+
 ## Mental Model
 GPIO pin = physical wire controlled by a register bit.
 
